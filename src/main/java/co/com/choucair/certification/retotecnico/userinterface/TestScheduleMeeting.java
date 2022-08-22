@@ -19,7 +19,7 @@ public class TestScheduleMeeting extends PageObject {
             .located(By.xpath("/html/body/main/section/div/div[3]/div[4]/div[3]/div/div[1]/div[8][text()]"));
 
     public final static Target COLUMN_MEETING_ID = Target.the("column to sort column meeting name")
-            .located(By.xpath("/html/body/main/section/div/div[3]/div[2]/div/div/div[1]"));
+            .located(By.xpath("//div[contains(@id,'MeetingId')]"));
 
     public final static Target TOAST_ERROR_MESSAGE = Target.the("toast with error message")
             .located(By.xpath("//div[@class='toast-message']"));
